@@ -1,0 +1,61 @@
+/* Paleta: Nord Deep + Ocean Blue */
+:root {
+    --bg-nord: #2e3440 !important;   /* Fondo Nord (ameno y mate) */
+    --primary-blue: #58a6ff !important; /* Azul océano para letras y bordes */
+    --secondary-blue: #1f6feb !important;
+    --card-bg: #3b4252 !important;   /* Gris Nord más claro para botones */
+    --text-main: #e5e9f0 !important; /* Blanco gélido (suave) */
+}
+
+/* Aplicar el fondo Nord a toda la página */
+html, body, .list, .main, .profile {
+    background-color: var(--bg-nord) !important;
+    color: var(--text-main) !important;
+}
+
+/* Título en azul océano con degradado */
+.profile_inner h1 {
+    font-size: 2.5rem !important;
+    background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: 800 !important;
+}
+
+/* Ajuste de la foto de perfil */
+.profile_inner img {
+    object-fit: cover !important;
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 50% !important;
+    border: 3px solid var(--primary-blue) !important;
+    padding: 4px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Botones de Proyectos en Azul */
+.profileMode .buttons .button {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--primary-blue) !important;
+    color: var(--primary-blue) !important; /* Letras azules */
+    border-radius: 10px !important;
+    transition: all 0.3s ease !important;
+    font-weight: 600 !important;
+}
+
+/* Efecto al pasar el mouse */
+.profileMode .buttons .button:hover {
+    background: var(--primary-blue) !important;
+    color: #2e3440 !important; /* Texto oscuro sobre fondo azul */
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Iconos sociales en azul */
+.social-icons a {
+    color: var(--primary-blue) !important;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2) !important;
+    color: var(--text-main) !important;
+}

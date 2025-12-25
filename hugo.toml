@@ -1,0 +1,41 @@
+baseURL = "https://gimenezvalentin.github.io/"
+languageCode = "es-es"
+title = "Portfolio | Valentin Gimenez"
+theme = "PaperMod"
+
+
+[params]
+    defaultTheme = "dark" # "light" o "auto" o "dark"
+    disableThemeToggle = true
+    customCSS = ["css/extended.css"]
+
+    # Configuración del Perfil
+    [params.profileMode]
+        enabled = true
+        title = "Hola, soy Valentin Gimenez"
+        subtitle = "Programador Python | Especialista en Automatización y Backend"
+        imageUrl = "images/image_cv.jpeg" # Opcional
+        
+        # AQUÍ VAN TUS PROYECTOS (Botones interactivos)
+        [[params.profileMode.buttons]]
+            name = "📊 Analisis de Datos con Pandas - Linea 144"
+            url = "https://colab.research.google.com/drive/1_L0h9xh2kAxrzZzP-BorO5Wq6ZwX6aif"
+        [[params.profileMode.buttons]]
+            name = "🗃️ Clasificador de Imagenes con IA (Yolo)"
+            url = "https://gitlab.com/gimenezvalentin99/tp-entorno-2024-c-3-bousono-gimenez"
+
+        [[params.profileMode.buttons]]
+            name = "🎛️ Grafos dirigidos + BFS"
+            url = "https://colab.research.google.com/drive/1i86ASFEyFCA7pSn6WLUzl34mBzJbM9Pv"
+        
+
+    # Iconos de contacto abajo
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/valentín-giménez-73b35b269"
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/gimenezvalentin"
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:valentíngimenez.dev@gmail.com"
